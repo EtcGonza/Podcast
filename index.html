@@ -15,6 +15,43 @@
 </head>
 
 <body>
+
+    <!-- <header>
+
+        <div class="container">
+
+            <img src="assets/img/logo.svg" alt="logo"> ​
+
+            <nav>
+
+                <input type="checkbox" id="menu">
+
+                <label for="menu">
+
+                    <i class="open fas fa-bars"></i>
+
+                    <i class="close fas fa-times"></i>
+
+                </label> ​
+
+                <ul>
+
+                    <li><a href="#">Episodios</a></li>
+
+                    <li><a href="#">Nosotros</a></li>
+
+                    <li><a href="#">Entrevistas</a></li>
+
+                    <li><a href="#">Tópicos</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header> -->
+
     <header>
         <div class="contenedor-nav">
             <a href="index.html">
@@ -28,67 +65,57 @@
             </div>
 
             <nav class="navegacion" id="navegacion">
-                <a href="#">Episodios</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Entrevistas</a>
-                <a href="#">Topicos</a>
+                <a href="#episodios">Episodios</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#entrevistas">Entrevistas</a>
+                <a href="#topicos">Topicos</a>
             </nav>
-        </div>
-
-        <div class="textos-header contenedor">
-
-            <div>
-                <h1 class="titulo-header">Hello
-                    <p class="world">world</p>
-                    pale blue dot.
-                </h1>
-            </div>
-
-            <div class="contenedor-parrafo">
-                <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
-            </div>
-
-            <div class="contenedor-boton">
-                <button>Conocé más</button>
-            </div>
-
         </div>
     </header>
 
+    <section class="seccion-intro contenedor">
 
-    <div class="seccion-podcast">
+        <div>
+            <h1 class="titulo-intro">Hello
+                <p class="world">world</p>
+                pale blue dot.
+            </h1>
+        </div>
+
+        <div class="parrafo-intro">
+            <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+        </div>
+
+        <div class="contenedor-boton">
+            <button>Conocé más</button>
+        </div>
+
+    </section>
+
+    <section class="seccion-podcast">
         <div class="contenedor">
-            <h2>Episodios</h2>
+            <h2 id="episodios">Episodios</h2>
             <div class="podcasts">
-                <div class="podcast">
-                    <img src="/img/podcast/embed1.png" alt="episodio1">
-                </div>
-                <div class="podcast">
-                    <img src="/img/podcast/embed2.png" alt="episodio2">
-                </div>
-                <div class="podcast">
-                    <img src="/img/podcast/embed3.png" alt="episodio3">
-                </div>
-                <div class="podcast">
-                    <img src="/img/podcast/embed4.png" alt="episodio4">
-                </div>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
         </div>
-    </div>
+    </section>
 
-
-    <div class="donde-venimos">
+    <section class="seccion-venimos">
         <img class="phone-img" src="/img/phone.png" alt="phone">
-        <div class="donde-venimos-textos contenedor">
-            <h2>De dónde venimos</h2>
+        <div class="seccion-venimos-textos contenedor">
+            <h2 id="nosotros">De dónde venimos</h2>
             <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. </p>
             <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
         </div>
-    </div>
+    </section>
 
-    <div>
+    <section class="seccion-invitadas">
         <div class="contenedor">
-            <h2>Invitadas/os estelares</h2>
+            <h2 id="entrevistas">Invitadas/os estelares</h2>
         </div>
         <div class="imagenes-invitadas">
             <img src="/img/Invitadas/computer_in_1950.png" alt="Computer in the 1950s">
@@ -98,10 +125,10 @@
             <img src="/img/Invitadas/grace-hopper.png" alt="Grace Hopper">
             <img src="/img/Invitadas/susan-kare.png" alt="Susan Kare">
         </div>
-    </div>
+    </section>
 
-    <div class="seccion-temas contenedor">
-        <h2>Algunos de nuestros temas</h2>
+    <section class="seccion-temas contenedor">
+        <h2 id="topicos">Algunos de nuestros temas</h2>
         <div class="contenedor-iconos">
             <div class="icono-tema">
                 <img src="/assets/iconos/icon1.svg" alt="Trabajo remoto">
@@ -120,16 +147,15 @@
                 <p>Seguridad informática</p>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <div class="contenedor-novedades">
+    <section class="seccion-novedades">
         <h2>¿Querés las ultimas novedades?</h2>
         <div class="contenedor-boton">
             <button class="boton-novedades">Escuchá los episodios</button>
         </div>
-    </div>
-
+    </section>
 
     <footer>
         <div class="copyright">

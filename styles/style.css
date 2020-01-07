@@ -12,7 +12,19 @@
 }
 
 
-/* Contenedor */
+/*  */
+
+
+/* Utilidades */
+
+
+/*  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .contenedor {
     width: 90%;
@@ -25,23 +37,30 @@
 
 /* Tipografias */
 
+
+/*  */
+
 h1,
 h2 {
+    color: #060A24;
     font-family: var(--family-title);
     font-size: var(--title-size-mobile);
     font-weight: 400;
+    letter-spacing: 0;
     line-height: 42px;
 }
 
 p {
+    color: #060A24;
     font-family: var(--family-paragraph);
     font-size: var(--paragraph-size-mobile);
     font-weight: 400;
     line-height: 22px;
+    letter-spacing: 0;
 }
 
 @media (min-width: 768px) {
-    .titulo-header {
+    .titulo-intro {
         font-size: var(--title-size-web);
     }
     h2 {
@@ -49,6 +68,47 @@ p {
     }
     p {
         font-size: var(--paragraph-size-web);
+        line-height: 24px;
+    }
+}
+
+
+/* */
+
+
+/* Botones*/
+
+
+/* */
+
+.contenedor-boton {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contenedor-boton button {
+    font-family: 'IBM Plex Mono';
+    font-weight: 500;
+    background-color: var(--color-boton);
+    border: none;
+    text-transform: uppercase;
+    height: 48px;
+    width: 100%;
+    margin-top: 36px;
+}
+
+button:hover {
+    color: #FFFFFF;
+    background: linear-gradient(90deg, rgba(0, 243, 187, 1) 19%, rgba(0, 0, 254, 1) 65%);
+}
+
+@media (min-width: 768px) {
+    .contenedor-boton {
+        text-align: left;
+    }
+    .contenedor-boton button {
+        width: 226px;
     }
 }
 
@@ -57,6 +117,9 @@ p {
 
 
 /* Header */
+
+
+/*  */
 
 .contenedor-nav {
     display: flex;
@@ -89,6 +152,28 @@ p {
     margin-right: 19px;
 }
 
+
+/*  */
+
+
+/* Seccion Intro */
+
+
+/*  */
+
+.titulo-intro {
+    width: 250px;
+}
+
+@media (min-width: 768px) {
+    .titulo-intro {
+        width: 766px;
+    }
+    .parrafo-intro {
+        width: 50%;
+    }
+}
+
 .world {
     display: inline;
     font-size: var(--title-size-mobile);
@@ -96,7 +181,7 @@ p {
 }
 
 @media (min-width: 768px) {
-    .textos-header {
+    .seccion-intro {
         width: 1200px;
         padding: 20px;
         margin-top: 130px;
@@ -134,62 +219,6 @@ p {
 /*  */
 
 
-/* Titulo */
-
-.titulo-header {
-    width: 250px;
-}
-
-@media (min-width: 768px) {
-    .titulo-header {
-        width: 766px;
-    }
-    .contenedor-parrafo {
-        width: 50%;
-    }
-}
-
-
-/*  */
-
-
-/* Botones*/
-
-.contenedor-boton {
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.contenedor-boton button {
-    font-family: 'IBM Plex Mono';
-    font-weight: 500;
-    background-color: var(--color-boton);
-    border: none;
-    text-transform: uppercase;
-    height: 48px;
-    width: 100%;
-    margin-top: 36px;
-}
-
-button:hover {
-    color: white;
-    background: linear-gradient(90deg, rgba(0, 243, 187, 1) 19%, rgba(0, 0, 254, 1) 65%);
-}
-
-@media (min-width: 768px) {
-    .contenedor-boton {
-        text-align: left;
-    }
-    .contenedor-boton button {
-        width: 226px;
-    }
-}
-
-
-/*  */
-
-
 /*  */
 
 
@@ -203,37 +232,39 @@ button:hover {
 }
 
 .seccion-podcast h2 {
-    color: white;
+    color: #FFFFFF;
+    margin-bottom: 21px;
 }
 
 .seccion-podcast .contenedor:first-child {
     padding: 200px 0;
 }
 
-.podcast img {
+.podcasts iframe {
     max-width: 100%;
-    height: 225px;
+    width: 298px;
+    height: 232px;
     margin-bottom: 11px;
 }
 
 @media (min-width: 768px) {
     .seccion-podcast h2 {
-        margin-left: 10px;
+        margin-bottom: 26px;
     }
     .podcasts {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         justify-content: center;
     }
-    .podcast {
-        margin-bottom: 50px;
-        margin-right: 50px;
-    }
-    .podcast img {
+    .podcasts iframe {
         width: 584px;
         height: 232px;
+        margin-bottom: 11px;
+        margin: 0px 72px 72px 0px;
     }
+    /* .podcasts iframe:first-of-type {
+        margin-top: 0px;
+    } */
 }
 
 
@@ -249,18 +280,13 @@ button:hover {
     height: 519px;
 }
 
-.donde-venimos-textos h2 {
+.seccion-venimos-textos h2 {
     width: 50%;
-    margin-bottom: 0;
+    margin-bottom: 8px;
 }
 
 @media (min-width: 768px) {
-    /* .donde-venimos {
-        display: flex;
-        position: absolute;
-        top: 1350px;
-    } */
-    .donde-venimos {
+    .seccion-venimos {
         display: flex;
         position: relative;
         top: -300px;
@@ -271,11 +297,11 @@ button:hover {
         width: 457px;
         height: 660px;
     }
-    .donde-venimos-textos h2 {
+    .seccion-venimos-textos h2 {
         width: auto;
-        margin-bottom: 0;
+        margin-bottom: 24px;
     }
-    .donde-venimos-textos p {
+    .seccion-venimos-textos p {
         width: 60%;
     }
 }
@@ -285,6 +311,10 @@ button:hover {
 
 
 /* Invitadas */
+
+.seccion-invitadas h2 {
+    margin-bottom: 14px;
+}
 
 .imagenes-invitadas {
     line-height: 0;
@@ -296,12 +326,14 @@ button:hover {
 }
 
 @media (min-width: 768px) {
+    .seccion-invitadas h2 {
+        margin-bottom: 36px;
+    }
     .imagenes-invitadas {
         display: flex;
         flex-wrap: wrap;
     }
     .imagenes-invitadas img {
-        /* flex-grow: 1; */
         width: 33.3%;
     }
 }
@@ -355,34 +387,34 @@ button:hover {
 
 /* Novedades */
 
-.contenedor-novedades {
+.seccion-novedades {
     height: 320px;
     background-image: linear-gradient(#0000FF, #0000A3);
     clip-path: polygon(0px 41px, 100% 0px, 100% 100.33%, 0px 101.66%);
 }
 
-.contenedor-novedades h2 {
+.seccion-novedades h2 {
     padding-top: 50px;
-    color: white;
+    color: #FFFFFF;
     width: 60%;
     margin: 0 auto;
     text-align: center;
 }
 
-.contenedor-novedades .contenedor-boton {
+.seccion-novedades .contenedor-boton {
     width: 90%;
 }
 
 @media (min-width: 768px) {
-    .contenedor-novedades {
+    .seccion-novedades {
         height: 440px;
         clip-path: polygon(0px 120px, 100% 0px, 100% 100.33%, 0px 101.66%);
     }
-    .contenedor-novedades h2 {
+    .seccion-novedades h2 {
         padding-top: 185px;
         width: auto;
     }
-    .contenedor-novedades .contenedor-boton {
+    .seccion-novedades .contenedor-boton {
         text-align: center;
     }
     .contenedor-boton .boton-novedades {
@@ -421,6 +453,7 @@ button:hover {
     footer {
         display: flex;
         justify-content: space-between;
+        margin: 36px 0px 31px 100px;
     }
     .copyright {
         margin-top: 0px;
