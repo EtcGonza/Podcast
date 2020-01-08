@@ -9,6 +9,7 @@
     --theme-size: 24px;
     --paragraph-size-web: 16px;
     --azul: #0000EC;
+    --color-text: #060A24;
 }
 
 
@@ -24,11 +25,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--color-text);
 }
 
 .contenedor {
-    width: 90%;
-    margin: auto;
+    max-width: 1040px;
+    margin: 0 auto;
+    width: calc(100% - 32px);
 }
 
 
@@ -42,7 +45,6 @@
 
 h1,
 h2 {
-    color: #060A24;
     font-family: var(--family-title);
     font-size: var(--title-size-mobile);
     font-weight: 400;
@@ -51,7 +53,6 @@ h2 {
 }
 
 p {
-    color: #060A24;
     font-family: var(--family-paragraph);
     font-size: var(--paragraph-size-mobile);
     font-weight: 400;
@@ -182,11 +183,10 @@ button:hover {
 
 @media (min-width: 1024px) {
     .seccion-intro {
-        width: 1200px;
-        padding: 20px;
+        /* width: 100%; */
         margin-top: 130px;
-        margin-left: 180px;
-        margin-right: 0px;
+        /* margin-left: 180px; */
+        /* margin-right: 0px; */
     }
     .navegacion {
         display: inline;
@@ -204,7 +204,6 @@ button:hover {
         color: #00F3BB;
     }
     .navegacion a:active {
-        color: #060A24;
         opacity: 56%;
     }
     .mobile-menu {
@@ -262,9 +261,6 @@ button:hover {
         margin-bottom: 11px;
         margin: 0px 72px 72px 0px;
     }
-    /* .podcasts iframe:first-of-type {
-        margin-top: 0px;
-    } */
 }
 
 
@@ -289,6 +285,7 @@ button:hover {
     .seccion-venimos {
         display: flex;
         position: relative;
+        align-items: center;
         top: -300px;
     }
     .phone-img {
@@ -298,11 +295,11 @@ button:hover {
         height: 660px;
     }
     .seccion-venimos-textos h2 {
-        width: auto;
+        width: 100%;
         margin-bottom: 24px;
     }
     .seccion-venimos-textos p {
-        width: 60%;
+        width: 50%;
     }
 }
 
