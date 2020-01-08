@@ -59,7 +59,7 @@ p {
     letter-spacing: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .titulo-intro {
         font-size: var(--title-size-web);
     }
@@ -103,7 +103,7 @@ button:hover {
     background: linear-gradient(90deg, rgba(0, 243, 187, 1) 19%, rgba(0, 0, 254, 1) 65%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .contenedor-boton {
         text-align: left;
     }
@@ -133,7 +133,7 @@ button:hover {
     height: 24px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .logo-bd {
         margin-left: 100px;
         margin-top: 22px;
@@ -165,7 +165,7 @@ button:hover {
     width: 250px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .titulo-intro {
         width: 766px;
     }
@@ -180,7 +180,7 @@ button:hover {
     text-decoration: line-through;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .seccion-intro {
         width: 1200px;
         padding: 20px;
@@ -247,7 +247,7 @@ button:hover {
     margin-bottom: 11px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .seccion-podcast h2 {
         margin-bottom: 26px;
     }
@@ -285,7 +285,7 @@ button:hover {
     margin-bottom: 8px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .seccion-venimos {
         display: flex;
         position: relative;
@@ -325,7 +325,7 @@ button:hover {
     margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .seccion-invitadas h2 {
         margin-bottom: 36px;
     }
@@ -360,7 +360,7 @@ button:hover {
     line-height: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .seccion-temas h2 {
         margin-top: 64px;
     }
@@ -405,7 +405,7 @@ button:hover {
     width: 90%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .seccion-novedades {
         height: 440px;
         clip-path: polygon(0px 120px, 100% 0px, 100% 100.33%, 0px 101.66%);
@@ -449,7 +449,7 @@ button:hover {
     margin-right: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     footer {
         display: flex;
         justify-content: space-between;
