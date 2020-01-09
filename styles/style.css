@@ -10,6 +10,8 @@
     --paragraph-size-web: 16px;
     --azul: #0000EC;
     --color-text: #060A24;
+    --boton-size-mobile: 16px;
+    --boton-size-web: 18px;
 }
 
 
@@ -91,12 +93,12 @@ p {
 .contenedor-boton button {
     font-family: 'IBM Plex Mono';
     font-weight: 500;
+    font-size: var(--boton-size-mobile);
     background-color: var(--color-boton);
     border: none;
     text-transform: uppercase;
     height: 48px;
     width: 100%;
-    margin-top: 36px;
 }
 
 button:hover {
@@ -110,6 +112,9 @@ button:hover {
     }
     .contenedor-boton button {
         width: 226px;
+    }
+    .contenedor-boton button {
+        font-size: var(--boton-size-web);
     }
 }
 
@@ -164,6 +169,11 @@ button:hover {
 
 .titulo-intro {
     width: 250px;
+    margin: 39px 0px 16px 0px;
+}
+
+.parrafo-intro {
+    margin-bottom: 36px;
 }
 
 @media (min-width: 1024px) {
@@ -226,8 +236,9 @@ button:hover {
 .seccion-podcast {
     position: relative;
     top: -100px;
+    padding: 200px 0;
     background-image: linear-gradient(#0000FF, #0000A3);
-    clip-path: polygon(0px 187px, 100% 127px, 100% 90.08%, 0px 96.16%);
+    clip-path: polygon(0px 165px, 100% 127px, 100% 93.09%, 0px 96.16%);
 }
 
 .seccion-podcast h2 {
@@ -235,15 +246,17 @@ button:hover {
     margin-bottom: 21px;
 }
 
-.seccion-podcast .contenedor:first-child {
-    padding: 200px 0;
+.podcasts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .podcasts iframe {
     max-width: 100%;
     width: 298px;
     height: 232px;
-    margin-bottom: 11px;
+    margin: 5.5px 11px 5.5px 11px;
 }
 
 @media (min-width: 1024px) {
@@ -254,6 +267,7 @@ button:hover {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
     .podcasts iframe {
         width: 584px;
@@ -269,16 +283,28 @@ button:hover {
 
 /* Donde venimos */
 
+.seccion-venimos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .phone-img {
-    display: relative;
-    margin: 0 auto;
     width: 360px;
     height: 519px;
 }
 
+.seccion-venimos-textos {
+    width: 90%;
+    margin: 27px 0 54px 0;
+}
+
 .seccion-venimos-textos h2 {
-    width: 50%;
     margin-bottom: 8px;
+}
+
+.seccion-venimos-textos p:first-of-type {
+    margin-bottom: 16px;
 }
 
 @media (min-width: 1024px) {
@@ -309,6 +335,11 @@ button:hover {
 
 /* Invitadas */
 
+.imagenes-invitadas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .seccion-invitadas h2 {
     margin-bottom: 14px;
 }
@@ -319,16 +350,12 @@ button:hover {
 
 .imagenes-invitadas img {
     max-width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 @media (min-width: 1024px) {
     .seccion-invitadas h2 {
         margin-bottom: 36px;
-    }
-    .imagenes-invitadas {
-        display: flex;
-        flex-wrap: wrap;
     }
     .imagenes-invitadas img {
         width: 33.3%;
@@ -339,22 +366,28 @@ button:hover {
 /* Temas */
 
 .seccion-temas h2 {
-    margin-top: 48px;
+    margin: 48px 0 37px 0;
 }
 
 .icono-tema {
     display: block;
     text-align: center;
+    margin-bottom: 65px;
+}
+
+.icono-tema:first-of-type {
+    margin-bottom: 49px;
+}
+
+.icono-tema:last-of-type {
+    margin-bottom: 42px;
 }
 
 .contenedor-iconos p {
     font-family: 'IBM Plex Sans';
     font-size: var(--theme-size);
     font-weight: 600;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 49px;
-    line-height: 30px;
+    margin-top: 13px;
 }
 
 @media (min-width: 1024px) {
@@ -386,6 +419,7 @@ button:hover {
 
 .seccion-novedades {
     height: 320px;
+    max-height: 1440px;
     background-image: linear-gradient(#0000FF, #0000A3);
     clip-path: polygon(0px 41px, 100% 0px, 100% 100.33%, 0px 101.66%);
 }
@@ -394,7 +428,7 @@ button:hover {
     padding-top: 50px;
     color: #FFFFFF;
     width: 60%;
-    margin: 0 auto;
+    margin: 64px auto 36px auto;
     text-align: center;
 }
 
@@ -427,18 +461,17 @@ button:hover {
 
 .copyright {
     text-align: center;
-    margin-top: 24px;
+    margin: 24px 0 16px 0;
 }
 
 .redes-sociales {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0px 45px 31px 45px;
 }
 
 .icono-red-social {
-    margin-top: 16px;
-    margin-bottom: 50px;
     margin-right: 38px;
 }
 
