@@ -31,7 +31,7 @@
 }
 
 .contenedor {
-    max-width: 1040px;
+    max-width: 1440px;
     margin: 0 auto;
     width: calc(100% - 32px);
 }
@@ -260,20 +260,23 @@ button:hover {
 }
 
 @media (min-width: 1024px) {
+    .seccion-podcast {
+        clip-path: polygon(0px 275px, 100% 127px, 100% 83.67%, 0px 96.16%);
+    }
     .seccion-podcast h2 {
-        margin-bottom: 26px;
+        margin: 111px 0 26px 0;
     }
     .podcasts {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        margin: 0 100px 0 100px;
     }
     .podcasts iframe {
         width: 584px;
         height: 232px;
-        margin-bottom: 11px;
-        margin: 0px 72px 72px 0px;
+        margin: 0px 72px 72px 11px;
     }
 }
 
@@ -283,9 +286,13 @@ button:hover {
 
 /* Donde venimos */
 
+
+/*  */
+
 .seccion-venimos {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -309,20 +316,19 @@ button:hover {
 
 @media (min-width: 1024px) {
     .seccion-venimos {
-        display: flex;
+        flex-wrap: nowrap;
         position: relative;
-        align-items: center;
         top: -300px;
     }
     .phone-img {
-        margin-left: 200px;
-        margin-right: 62px;
         width: 457px;
         height: 660px;
     }
     .seccion-venimos-textos h2 {
-        width: 100%;
         margin-bottom: 24px;
+    }
+    .seccion-venimos-textos {
+        margin-left: 62px;
     }
     .seccion-venimos-textos p {
         width: 50%;
@@ -334,6 +340,9 @@ button:hover {
 
 
 /* Invitadas */
+
+
+/*  */
 
 .imagenes-invitadas {
     display: flex;
@@ -363,7 +372,13 @@ button:hover {
 }
 
 
+/*  */
+
+
 /* Temas */
+
+
+/*  */
 
 .seccion-temas h2 {
     margin: 48px 0 37px 0;
@@ -406,9 +421,6 @@ button:hover {
     .icono-tema:last-of-type {
         margin-right: 0;
     }
-    .contenedor-iconos p {
-        text-align: center;
-    }
 }
 
 
@@ -416,6 +428,9 @@ button:hover {
 
 
 /* Novedades */
+
+
+/*  */
 
 .seccion-novedades {
     height: 320px;
@@ -458,6 +473,9 @@ button:hover {
 
 
 /* Footer */
+
+
+/*  */
 
 .copyright {
     text-align: center;
