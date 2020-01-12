@@ -69,7 +69,7 @@ p {
 }
 
 @media (min-width: 1024px) {
-    .titulo-intro {
+    h1.titulo-intro {
         font-size: var(--title-size-web);
     }
     h2 {
@@ -156,6 +156,13 @@ button:hover {
     display: none;
 }
 
+.navegacion a {
+    font-family: 'IBM Plex Mono';
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 .mobile-menu {
     font-size: 18px;
     margin-top: 16px;
@@ -171,7 +178,8 @@ button:hover {
 
 /*  */
 
-.titulo-intro {
+h1 {
+    display: flex;
     width: 250px;
     margin: 39px 0px 16px 0px;
 }
@@ -181,7 +189,7 @@ button:hover {
 }
 
 @media (min-width: 1024px) {
-    .titulo-intro {
+    h1.titulo-intro {
         width: 766px;
     }
     .parrafo-intro {
@@ -190,9 +198,14 @@ button:hover {
 }
 
 .world {
-    display: inline;
     font-size: var(--title-size-mobile);
     text-decoration: line-through;
+    /* HAY QUE ARREGLAR ESTE MARGIN POR OTRA COSA */
+    margin: 0 15px 0 15px;
+}
+
+.punto {
+    color: var(--azul);
 }
 
 @media (min-width: 1024px) {
@@ -204,9 +217,7 @@ button:hover {
         margin-top: 26px;
     }
     .navegacion a {
-        font-family: 'IBM Plex Mono';
-        text-decoration: none;
-        color: black;
+        font-size: var(--paragraph-size-web);
         margin-right: 48px;
     }
     .navegacion a:hover {
