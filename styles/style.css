@@ -36,6 +36,12 @@
     width: calc(100% - 32px);
 }
 
+@media (min-width: 1024px) {
+    .contenedor {
+        width: calc(100% - 200px);
+    }
+}
+
 
 /*  */
 
@@ -193,10 +199,7 @@ button:hover {
 
 @media (min-width: 1024px) {
     .seccion-intro {
-        /* width: 100%; */
         margin-top: 130px;
-        /* margin-left: 180px; */
-        /* margin-right: 0px; */
     }
     .navegacion {
         display: inline;
@@ -291,7 +294,6 @@ button:hover {
 
 .seccion-venimos {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -317,8 +319,7 @@ button:hover {
 @media (min-width: 1024px) {
     .seccion-venimos {
         flex-wrap: nowrap;
-        position: relative;
-        top: -300px;
+        width: 50%;
     }
     .phone-img {
         width: 457px;
@@ -329,9 +330,6 @@ button:hover {
     }
     .seccion-venimos-textos {
         margin-left: 62px;
-    }
-    .seccion-venimos-textos p {
-        width: 50%;
     }
 }
 
@@ -350,7 +348,7 @@ button:hover {
 }
 
 .seccion-invitadas h2 {
-    margin-bottom: 14px;
+    margin-bottom: 36px;
 }
 
 .imagenes-invitadas {
@@ -407,7 +405,7 @@ button:hover {
 
 @media (min-width: 1024px) {
     .seccion-temas h2 {
-        margin-top: 64px;
+        margin: 64px 0 56px 0;
     }
     .contenedor-iconos {
         display: flex;
@@ -415,8 +413,7 @@ button:hover {
         justify-content: center;
     }
     .icono-tema {
-        margin-top: 45px;
-        margin-right: 100px;
+        margin: 45px 100px 34px 0;
     }
     .icono-tema:last-of-type {
         margin-right: 0;
@@ -433,7 +430,7 @@ button:hover {
 /*  */
 
 .seccion-novedades {
-    height: 320px;
+    height: 341px;
     max-height: 1440px;
     background-image: linear-gradient(#0000FF, #0000A3);
     clip-path: polygon(0px 41px, 100% 0px, 100% 100.33%, 0px 101.66%);
@@ -453,11 +450,12 @@ button:hover {
 
 @media (min-width: 1024px) {
     .seccion-novedades {
-        height: 440px;
+        height: 518px;
         clip-path: polygon(0px 120px, 100% 0px, 100% 100.33%, 0px 101.66%);
     }
     .seccion-novedades h2 {
-        padding-top: 185px;
+        padding-top: 200px;
+        margin-bottom: 36px;
         width: auto;
     }
     .seccion-novedades .contenedor-boton {
@@ -489,11 +487,11 @@ button:hover {
     margin: 0px 45px 31px 45px;
 }
 
-.icono-red-social {
-    margin-right: 38px;
+footer i {
+    margin: 0 36px 0 0;
 }
 
-.icono-red-social:last-of-type {
+footer i:last-of-type {
     margin-right: 0;
 }
 
@@ -501,18 +499,9 @@ button:hover {
     footer {
         display: flex;
         justify-content: space-between;
-        margin: 36px 0px 31px 100px;
+        margin: 36px 100px 31px 100px;
     }
-    .copyright {
-        margin-top: 0px;
-        margin-left: 25px;
-    }
-    .icono-red-social {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-right: 36px;
-    }
-    .icono-red-social:last-of-type {
-        margin-right: 100px;
+    .redes-sociales {
+        margin: 0;
     }
 }
