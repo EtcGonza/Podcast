@@ -42,6 +42,14 @@
     }
 }
 
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 
 /*  */
 
@@ -133,9 +141,16 @@ button:hover {
 
 /*  */
 
-.contenedor-nav {
+header {
+    height: 44px;
+    position: relative;
+}
+
+.contenedor-navegacion {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 .logo-bd {
@@ -144,29 +159,63 @@ button:hover {
     height: 24px;
 }
 
+nav input {
+    display: none;
+}
+
+nav label i {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+nav label i.close {
+    display: none;
+}
+
+nav ul {
+    display: none;
+    background-color: #0000EC;
+    list-style: none;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    right: 0;
+}
+
+nav a {
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: var(--family-paragraph);
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+}
+
+header nav input:checked~label .close {
+    display: block;
+}
+
+header nav input:checked~label .open {
+    display: none;
+}
+
+header nav input:checked~ul {
+    display: block;
+}
+
 @media (min-width: 1024px) {
     .logo-bd {
         margin: 22px 0 0 100px;
         width: 36px;
         height: 36px;
     }
-}
-
-.navegacion {
-    display: none;
-}
-
-.navegacion a {
-    font-family: 'IBM Plex Mono';
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.mobile-menu {
-    font-size: 18px;
-    margin-top: 16px;
-    margin-right: 19px;
 }
 
 
@@ -179,9 +228,7 @@ button:hover {
 /*  */
 
 h1 {
-    display: flex;
-    width: 250px;
-    margin: 39px 0px 16px 0px;
+    margin: 29px 0px 16px 0px;
 }
 
 .parrafo-intro {
@@ -200,15 +247,12 @@ h1 {
 .world {
     font-size: var(--title-size-mobile);
     text-decoration: line-through;
-    /* HAY QUE ARREGLAR ESTE MARGIN POR OTRA COSA */
-    margin: 0 15px 0 15px;
-}
-
-.punto {
-    color: var(--azul);
 }
 
 @media (min-width: 1024px) {
+    h1 {
+        display: flex;
+    }
     .seccion-intro {
         margin-top: 120px;
     }
@@ -232,6 +276,11 @@ h1 {
     }
     .world {
         font-size: var(--title-size-web);
+        /* HAY QUE ARREGLAR ESTA CHANCHADA MARGIN POR OTRA COSA */
+        margin: 0 15px 0 15px;
+    }
+    .punto {
+        color: var(--azul);
     }
 }
 
