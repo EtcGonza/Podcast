@@ -163,6 +163,10 @@ nav input {
     display: none;
 }
 
+label i {
+    margin-right: 19px;
+}
+
 nav label i {
     display: inline-block;
     height: 14px;
