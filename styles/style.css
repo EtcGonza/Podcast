@@ -325,6 +325,7 @@ h1 {
     width: 298px;
     height: 232px;
     margin: 5.5px 11px 5.5px 11px;
+    border: none;
 }
 
 @media (min-width: 1440px) {
