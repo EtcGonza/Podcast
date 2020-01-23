@@ -18,7 +18,7 @@
 /*  */
 
 
-/* Utilidades */
+/* Utilidades y generales*/
 
 
 /*  */
@@ -113,11 +113,13 @@ p {
     text-transform: uppercase;
     height: 48px;
     width: 100%;
+    transition: color 0.25s ease;
 }
 
 button:hover {
     color: #FFFFFF;
-    background: linear-gradient(90deg, rgba(0, 243, 187, 1) 19%, rgba(0, 0, 254, 1) 65%);
+    background: linear-gradient(120deg, rgba(0, 243, 187, 1) 21%, rgba(0, 0, 254, 1) 83%);
+    transition: color 0.25s ease;
 }
 
 @media (min-width: 1024px) {
@@ -275,9 +277,6 @@ h1 {
 }
 
 @media (min-width: 1024px) {
-    h1 {
-        display: flex;
-    }
     h1.titulo-intro {
         width: 766px;
     }
@@ -289,8 +288,6 @@ h1 {
     }
     .world {
         font-size: var(--title-size-web);
-        /* HAY QUE ARREGLAR ESTA CHANCHADA MARGIN POR OTRA COSA */
-        margin: 0 15px 0 15px;
     }
     .punto {
         color: var(--color-primario);
