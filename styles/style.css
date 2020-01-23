@@ -36,7 +36,7 @@
     width: calc(100% - 32px);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .contenedor {
         width: calc(100% - 400px);
     }
@@ -76,7 +76,7 @@ p {
     letter-spacing: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     h1.titulo-intro {
         font-size: var(--title-size-web);
     }
@@ -113,16 +113,14 @@ p {
     text-transform: uppercase;
     height: 48px;
     width: 100%;
-    transition: color 0.25s ease;
 }
 
 button:hover {
     color: #FFFFFF;
     background: linear-gradient(120deg, rgba(0, 243, 187, 1) 21%, rgba(0, 0, 254, 1) 83%);
-    transition: color 0.25s ease;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .contenedor-boton {
         text-align: left;
     }
@@ -216,7 +214,7 @@ header nav input:checked~ul {
     display: block;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .contenedor-navegacion {
         justify-content: space-between;
         margin: 0 100px 0 100px;
@@ -276,7 +274,7 @@ h1 {
     text-decoration: line-through;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     h1.titulo-intro {
         width: 766px;
     }
@@ -329,7 +327,7 @@ h1 {
     margin: 5.5px 11px 5.5px 11px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .seccion-podcast {
         clip-path: polygon(0px 275px, 100% 127px, 100% 83.67%, 0px 96.16%);
     }
@@ -393,7 +391,7 @@ h1 {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .seccion-venimos {
         flex-wrap: nowrap;
         top: -300px;
@@ -402,6 +400,9 @@ h1 {
         width: 457px;
         height: 660px;
         margin-right: 67px;
+    }
+    .seccion-venimos-textos {
+        width: 40%;
     }
 }
 
@@ -438,7 +439,7 @@ h1 {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .seccion-invitadas h2 {
         margin-bottom: 36px;
     }
@@ -481,7 +482,7 @@ h1 {
     margin-top: 13px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .seccion-temas h2 {
         margin: 64px 0 56px 0;
     }
@@ -529,7 +530,7 @@ h1 {
     width: 90%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .seccion-novedades {
         height: 518px;
         clip-path: polygon(0px 120px, 100% 0px, 100% 100.33%, 0px 101.66%);
@@ -565,7 +566,14 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px 45px 31px 45px;
+}
+
+.redes-sociales a {
+    margin-right: 28px;
+}
+
+.redes-sociales a:last-of-type {
+    margin-right: 0px;
 }
 
 footer i {
@@ -576,7 +584,7 @@ footer i:last-of-type {
     margin-right: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     footer {
         display: flex;
         justify-content: space-between;
