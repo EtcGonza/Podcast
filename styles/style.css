@@ -390,21 +390,16 @@ h1 {
     margin-bottom: 16px;
 }
 
-
-/* @media (min-width: 768px) {
-    .seccion-venimos-textos {
-        width: 100%;
+@media (min-width: 768px) {
+    .seccion-venimos {
+        flex-wrap: wrap;
     }
-    .phone-img {
-        width: 207px;
-        height: 410px;
-    }
-} */
+}
 
 @media (min-width: 1024px) {
     .seccion-venimos {
         flex-wrap: nowrap;
-        top: -300px;
+        top: -250px;
     }
     .phone-img {
         width: 457px;
