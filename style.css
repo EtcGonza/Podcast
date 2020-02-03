@@ -54,11 +54,6 @@ a {
     text-decoration: none;
 }
 
-a:active {
-    text-decoration: line-through;
-    color: rgba(6, 10, 36, 0.56);
-}
-
 
 /*  */
 
@@ -331,7 +326,7 @@ h1 {
 
 .podcasts iframe {
     max-width: 100%;
-    width: 488px;
+    width: 298px;
     height: 232px;
     margin: 5.5px 11px 5.5px 11px;
     border: none;
@@ -349,26 +344,12 @@ h1 {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin-bottom: 64px;
+        /* margin: 0 100px 0 100px; */
     }
     .podcasts iframe {
-        width: 429px;
-        /* width: 584px; */
+        width: 584px;
         height: 232px;
-        margin-bottom: 72px;
-    }
-    .podcasts iframe:nth-last-child(-n + 2) {
-        margin-bottom: 0px;
-    }
-    .podcasts iframe:nth-child(odd) {
-        margin-right: 72px;
-    }
-    @media (min-width: 1440px) {
-        .podcasts iframe {
-            width: 584px;
-            height: 232px;
-            margin-bottom: 72px;
-        }
+        margin: 0px 72px 72px 11px;
     }
 }
 
