@@ -160,6 +160,8 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    margin: 0 auto;
+    /* max-width: 1440px; */
 }
 
 .logo-bd {
@@ -392,8 +394,9 @@ h1 {
 }
 
 .phone-img {
-    width: 360px;
+    max-width: 360px;
     height: 519px;
+    width: 100%;
 }
 
 .seccion-venimos-textos {
